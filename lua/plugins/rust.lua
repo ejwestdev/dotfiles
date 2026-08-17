@@ -1,14 +1,16 @@
 return {
   {
-    "neovim/nvim-lspconfig",
+    "mrcjkb/rustaceanvim",
     opts = {
-      servers = {
-        rust_analyzer = {
-          settings = {
-            ["rust-analyzer"] = {
-              check = {
-                command = "clippy",
-              },
+      server = {
+        default_settings = {
+          ["rust-analyzer"] = {
+            cargo = {
+              target = "thumbv8m.main-none-eabihf",
+              allTargets = false,
+            },
+            check = {
+              command = "clippy",
             },
           },
         },

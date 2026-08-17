@@ -4,6 +4,10 @@
 
 vim.o.shell = "fish"
 
+-- source per-project `.nvimrc` files
+vim.o.exrc = true
+vim.o.secure = true
+
 local function update_cursor()
   if vim.o.background == "light" then
     -- black block cursor in insert mode for light themes
