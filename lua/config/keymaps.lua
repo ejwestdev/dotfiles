@@ -33,15 +33,3 @@ vim.keymap.set("n", "<leader>ts", function()
     vim.o.laststatus = 0
   end
 end, { desc = "Toggle statusline" })
-
--- Override <leader>uD to also toggle statusline
-vim.keymap.set("n", "<leader>uD", function()
-  Snacks.toggle.get("dim"):toggle()
-  if Snacks.dim.enabled then
-    vim.g._saved_laststatus = vim.o.laststatus
-    vim.o.laststatus = 0
-  else
-    vim.o.laststatus = vim.g._saved_laststatus or 3
-  end
-end, { desc = "Toggle Dim + Statusline" })
-
