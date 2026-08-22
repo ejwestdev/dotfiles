@@ -6,6 +6,10 @@
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Half-page down and center" })
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Half-page up and center" })
 
+-- Center cursor after search jumps
+vim.keymap.set("n", "n", "nzzzv", { desc = "Next search match and center" })
+vim.keymap.set("n", "N", "Nzzzv", { desc = "Previous search match and center" })
+
 -- Toggle LSP inlay hints
 vim.keymap.set("n", "<leader>th", function()
   vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
