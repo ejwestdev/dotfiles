@@ -1,0 +1,18 @@
+scan_timeout = 100
+
+format = """
+$directory\
+${custom.jj}\
+$cmd_duration\
+\n$character
+"""
+
+[custom.jj]
+when = "jj-starship detect"
+shell = ["jj-starship"]
+format = "$output"
+
+[cmd_duration]
+format = "[$duration]($style)"
+
+
