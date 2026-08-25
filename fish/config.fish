@@ -33,6 +33,7 @@ alias ccr='clear && cargo run'
 alias cr='cargo run'
 alias ccp='cargo clippy -- -W clippy::pedantic'
 alias v='vim'
+alias e='exit'
 #jj 
 alias jgp='jj git push -b'
 alias jb='jj bookmark set'

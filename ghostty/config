@@ -3,6 +3,10 @@ window-height = 28
 font-size = 18
 shell-integration = fish
 command = fish --login
+theme = Catppuccin Frappe
+window-decoration = false
+gtk-titlebar = false
+
 
 
 
