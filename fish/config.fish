@@ -23,7 +23,7 @@ fish_add_path --prepend $HOME/.cargo/bin
 fish_add_path --prepend $HOME/evcxr-v0.21.1-x86_64-unknown-linux-gnu
 
 starship init fish | source
-
+zoxide init fish | source
 alias rm='rm -i'
 alias flushdns='sudo systemd-resolve --flush-caches'
 alias vim='nvim'
@@ -34,6 +34,8 @@ alias cr='cargo run'
 alias ccp='cargo clippy -- -W clippy::pedantic'
 alias v='vim'
 alias e='exit'
+alias rg='rg -S'
+alias mkdir='mkdir -p'
 #jj 
 alias jgp='jj git push -b'
 alias jb='jj bookmark set'
