@@ -21,6 +21,7 @@ fish_add_path --prepend $HOME/.opencode/bin
 fish_add_path --prepend $HOME/.local/bin
 fish_add_path --prepend $HOME/.cargo/bin
 fish_add_path --prepend $HOME/evcxr-v0.21.1-x86_64-unknown-linux-gnu
+fish_add_path --prepend /usr/local/bin
 
 starship init fish | source
 zoxide init fish | source
