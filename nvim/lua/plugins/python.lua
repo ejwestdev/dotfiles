@@ -1,5 +1,5 @@
 return {
-  -- Configure conform.nvim to use Black and isort for Python
+  -- Black only for Python formatting (Ruff stays for LSP/lint)
   {
     "stevearc/conform.nvim",
     opts = {
