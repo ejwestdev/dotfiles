@@ -6,8 +6,3 @@ command = fish --login
 theme = Catppuccin Frappe
 window-decoration = false
 gtk-titlebar = false
-
-
-
-
-
