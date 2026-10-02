@@ -422,7 +422,8 @@ tmux_conf_urlscan_options="--compact --dedupe"
 
 # move status line to top
 #set -g status-position top
-
+#disable the status bar :)
+set -g status off
 
 # -- tpm -----------------------------------------------------------------------
 
