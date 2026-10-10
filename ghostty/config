@@ -1,8 +1,10 @@
 window-width = 82
 window-height = 28
 font-size = 18
-shell-integration = fish
-command = fish --login
+
+shell = nu
+#command = /home/linuxbrew/.linuxbrew/bin/nu
+
 theme = Catppuccin Frappe
 window-decoration = false
 gtk-titlebar = false

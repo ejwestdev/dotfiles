@@ -40,5 +40,5 @@ alias rg='rg -S'
 alias mkdir='mkdir -p'
 alias rgf='rg --files | rg'
 #jj 
-alias jgp='jj git push && jj new'
+alias jd='jj describe -m'
 alias jb='jj bookmark set'
